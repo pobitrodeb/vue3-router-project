@@ -11,6 +11,11 @@ const routes = [
         name: "about", 
         component: () => import('../components/About.vue'), 
     }, 
+    {
+        path: "/blog/:id", 
+        name: "blog.id", 
+        component: () => import('../components/Blog.vue'), 
+    }, 
 ]
 export default  createRouter({
     history:createWebHistory('/'),
